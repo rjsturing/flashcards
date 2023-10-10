@@ -1,5 +1,5 @@
 function createCard(id, question, answers, correctAnswer) {
-    const card = {
+ card = {
       id: id,
       question: question,
       answers: answers,
@@ -7,6 +7,10 @@ function createCard(id, question, answers, correctAnswer) {
     }
     return card
   }
+
+function evaluateGuess() {
+
+}
 
   module.exports = {
     createCard,

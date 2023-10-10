@@ -17,3 +17,9 @@ describe('card', function() {
     expect(card.correctAnswer).to.equal('object');
   });  
 });
+
+describe('evaluateGuess', function() {
+  it('should be a function', function() {
+    expect(evaluateGuess).to.be.a('function');
+  });
+})
