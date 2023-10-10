@@ -19,7 +19,14 @@ describe('card', function() {
 });
 
 describe('evaluateGuess', function() {
+
   it('should be a function', function() {
     expect(evaluateGuess).to.be.a('function');
   });
-})
+
+  it('should determine whether a guess is correct or not', function() {
+    const guess = evaluateGuess('string', 'string');
+    expect(guess).to.equal('correct!')
+  })
+
+});

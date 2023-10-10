@@ -1,18 +1,22 @@
 function createCard(id, question, answers, correctAnswer) {
- card = {
-      id: id,
-      question: question,
-      answers: answers,
-      correctAnswer: correctAnswer
-    }
-    return card
-  }
-
-function evaluateGuess() {
-
+  card = {
+    id: id,
+    question: question,
+    answers: answers,
+    correctAnswer: correctAnswer,
+  };
+  return card;
 }
 
-  module.exports = {
-    createCard,
-    evaluateGuess
+function evaluateGuess(guess, correctAnswer) {
+  if (guess === correctAnswer) {
+    return "correct!";
+  } else {
+    return "incorrect!";
   }
+}
+
+module.exports = {
+  createCard,
+  evaluateGuess,
+};
