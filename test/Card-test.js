@@ -18,7 +18,7 @@ describe('card', function() {
   });  
 });
 
-describe('evaluateGuess', function() {
+describe('deck', function() {
 
   it('should be a function', function() {
     expect(evaluateGuess).to.be.a('function');
