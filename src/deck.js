@@ -1,6 +1,7 @@
-const createDeck(deck) => {
+const createDeck = (deck) => {
     return deck
-}
+  }
+  
 
 module.exports = {
     createDeck
