@@ -18,15 +18,20 @@ describe('card', function() {
   });  
 });
 
-describe('evaluateGuess', function() {
+describe('turns', function() {
 
   it('should be a function', function() {
     expect(evaluateGuess).to.be.a('function');
   });
 
-  it('should determine whether a guess is correct or not', function() {
+  it('should determine whether a guess is correct', function() {
     const guess = evaluateGuess('string', 'string');
     expect(guess).to.equal('correct!')
+  })
+
+  it('should determine whether a guess is incorrect', function() {
+    const guess = evaluateGuess('correct guess', 'incorrect guess');
+    expect(guess).to.equal('incorrect!')
   })
 
 });
