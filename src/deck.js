@@ -2,7 +2,12 @@ const createDeck = (deck) => {
     return deck
   }
   
-
-module.exports = {
-    createDeck
-}
+  const countCards = (deck) => {
+    let deckLength = deck.length
+    return deckLength
+  }
+  
+  module.exports = {
+    createDeck,
+    countCards,
+  }
